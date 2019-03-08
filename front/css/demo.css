@@ -1,0 +1,75 @@
+body{
+    background-color: rgb(112, 109, 109);
+}
+
+hr {
+    height: 3px;
+    width: 100%;
+    background-color: black;
+}
+
+.navbar-default {
+    background-image: linear-gradient(-90deg, black, #07277f, #b78807, white);
+    height: 60px;
+}
+
+.navbar-default .navbar-brand {
+    position: relative;
+    left: 385px;
+    color: white;
+    font-size: 45px;
+}
+
+.navbar-default .navbar-brand:hover {
+    color: #d2d2d2;
+}
+
+#calculate:hover, #create:hover, 
+#add:hover, #list:hover {
+    color: black;
+}
+
+.btn-block {
+    width: 50%;
+    margin: auto auto 10px;
+}
+
+.form-control {
+    width: 50%;
+    margin: 10px auto 10px auto;
+    text-align: center;
+}
+
+.panel-default .panel-heading {
+    text-align: center;
+    background-color: black;
+    color: white;
+    text-decoration: underline
+}
+
+#firstpanel, #thirdpanel{
+    background-color: #07277f; 
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
+
+#secondpanel{
+    background-color: #b78807;
+    padding-top: 20px; 
+    margin-bottom: 20px;
+}
+
+.label-center {
+    display: block;
+    width: 50%;
+    margin: auto auto 10px;
+}
+
+.list-group-item {
+    text-align: center;
+}
+
+.response-center {
+    text-align: center;
+}
+

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lambda Demo</title>
+
+    <!-- ICON -->
+    <link rel="icon" href="images/lambda.png" />
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+       
+    <!-- Boostrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    
+    <!-- Boostrap JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- Our CSS -->
+    <!--<link rel="stylesheet" href="css/demo.css" />-->
+    <link rel="stylesheet" href="https://s3.amazonaws.com/music-jermaine-anderson/css/demo.css" />
+</head>
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <strong class="navbar-brand">♬♫♪♩ Music Basics ♬♫♪♩</strong>
+            </div>
+        </div>
+    </nav>
+    <!-- Tempo Panel -->
+    <div id="firstpanel" class="col-md-4 col-md-offset-4">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3>Calculate Similar Tempo(s)</h3>
+            </div>
+            <div class="form-group">
+                <input id="number" placeholder="Enter A BPM" class="form-control" />
+            </div>
+            <div id="primeMessage" class="response-center"></div>
+            <button id="calculate" class="btn btn-md btn-success btn-block">Calculate Tempo(s)</button>
+        </div>
+    </div>
+    <hr>
+    <!-- View Genre Art -->
+    <div id="secondpanel" class="col-md-4 col-md-offset-4">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3>Genre Art</h3>
+            </div>
+            <select id="name" class="form-control">
+                <option value="">Select A Genre</option>
+                <option value="hiphop">Hip Hop</option>
+                <option value="edm">EDM</option>
+                <option value="jazz">Jazz</option>
+                <option value="country">Country</option>
+                <option value="reggae">Reggae</option>
+                <option value="pop">Pop</option>
+            </select>
+            <button id="create" class="btn btn-md btn-success btn-block">Show Art</button>
+        </div>
+        <div id="createMessage" class="response-center"></div>
+    </div>
+    <hr>
+    <!-- Add To DynamoDB -->
+    <div id="thirdpanel" class="col-md-4 col-md-offset-4">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3>Add Artist(s) To The Datebase</h3>
+            </div>
+            <div class="form-group">
+                <select id="genre" class="form-control">
+                    <option value="">Select A Genre</option>
+                    <option value="Hip Hop">Hip Hop</option>
+                    <option value="EDM">EDM</option>
+                    <option value="Jazz">Jazz</option>
+                    <option value="Country">Country</option>
+                    <option value="Reggae">Reggae</option>
+                    <option value="Pop">Pop</option>
+                </select>
+                <input id="artist" placeholder="Name" class="form-control" />
+                <input id="age" placeholder="Age" class="form-control" />
+            </div>
+            <div id="addMessage" class="response-center"></div>
+            <button id="add" class="btn btn-md btn-success btn-block">Add To Datebase</button>
+            <ul id="List" class="list-group"></ul>
+            <button id="list" class="btn btn-md btn-success btn-block btn-list">View Artist Datebase</button>
+        </div>
+    </div>
+    <hr>
+    <!-- Musical  Stage Name Generator -->
+    <div id="secondpanel" class="col-md-4 col-md-offset-4">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3>Musical Stage Name Generator</h3>
+            </div>
+            <input id="fname" placeholder="First Name" class="form-control" />
+            <select id="month" class="form-control">
+                <option value="">Select Birth Month</option>
+                <option value="January">January</option>
+                <option value="February">February</option>
+                <option value="March">March</option>
+                <option value="April">April</option>
+                <option value="May">May</option>
+                <option value="June">June</option>
+                <option value="July">July</option>
+                <option value="August">August</option>
+                <option value="September">September</option>
+                <option value="October">October</option>
+                <option value="November">November</option>
+                <option value="December">December</option>
+            </select>
+            <div id="generateMessage" class="response-center"></div>
+            <button id="generate" class="btn btn-md btn-success btn-block">Generate Stage Name</button>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="js/Tempo.js"></script>
+    <script src="js/Bucket.js"></script>
+    <script src="js/Add.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/View.js"></script>
+    <script src="https://s3.amazonaws.com/music-jermaine-anderson/js/Generate.js"></script>
+</body>
+</html>
